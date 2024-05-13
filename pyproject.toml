@@ -2,7 +2,7 @@
 name = "lolapy"
 version = "0.0.2"
 authors = [
-  { name="Alejandro Pirola", email="alejandro@leapfinancial.com" },
+  { name="Alejandro Pirola", email="alejamp@gmail.com" },
 ]
 description = "This project is a Lola SDK Extension to handle Whatsapp messaging"
 readme = "README.md"
