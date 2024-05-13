@@ -46,7 +46,11 @@ connector = WhatsappConnector(
 button1 = ReplyButton("id_yes", "Yes")
 button2 = ReplyButton("id_no", "No")
 
-connector.send_button_reply("Header Testing", "Body Testing", [button1, button2], PHONE, footer="Footer Testing")
+connector.send_button_reply("Header Testing", 
+                            "Body Testing", 
+                            [button1, button2], 
+                            PHONE, 
+                            footer="Footer Testing")
 ```
 
 ## Send link template
@@ -61,7 +65,10 @@ connector = WhatsappConnector(
             )
 
 
-connector.send_template("lola_verify_account", PHONE, body_params=["Alejandro", "*email*"], button_params=["PAYLOAD"])
+connector.send_template("lola_verify_account", 
+                        PHONE, 
+                        body_params=["Alejandro", "*email*"], 
+                        button_params=["PAYLOAD"])
 ```
 
 
