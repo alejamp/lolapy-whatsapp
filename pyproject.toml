@@ -1,0 +1,30 @@
+[project]
+name = "lolapy"
+version = "0.0.2"
+authors = [
+  { name="Alejandro Pirola", email="alejandro@leapfinancial.com" },
+]
+description = "This project is a Lola SDK Extension to handle Whatsapp messaging"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  # 'whatsapp-python'
+  "whatsapp-python @ git+https://github.com/alejamp/whatsapp",
+  "python-dotenv"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project.urls]
+"Homepage" = "https://github.com/alejamp/lola-py-sdk"
+"Bug Tracker" = "https://github.com/alejamp/lola-py-sdk/issues"
