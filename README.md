@@ -13,6 +13,10 @@ This project is a Python SDK for the Prompter API. It is intended to be used by 
 
 ``` pip install lolapy-whatsapp ```
 
+``` pip install git+https://...```
+
+```pip install .```
+
 
 # Examples
 

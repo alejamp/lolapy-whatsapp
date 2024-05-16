@@ -79,7 +79,12 @@ class WhatsappConnector:
         return response
 
 
+    def send_image(self, phone: str, image_url: str, caption: str | None = None) -> None:
+        response = self.messenger.send_image(image_url, phone, caption=caption)
+        return response
 
+    def get_messanger(self) -> WhatsApp:
+        return self.messenger
 
 
 if __name__ == "__main__":
@@ -87,10 +92,11 @@ if __name__ == "__main__":
         # set logging level to info
     logging.basicConfig(level=logging.INFO)
 
-    PHONE = "+541166937848"
+    
 
     load_dotenv("./examples/.env")
 
+    PHONE = getenv("RECIPIENT_PHONE")
     connector = WhatsappConnector(
                     token=getenv("TOKEN"),
                     phone_number_id=getenv("PHONE_NUMBER_ID"),
