@@ -76,6 +76,16 @@ connector.send_template("lola_verify_account",
 ```
 
 
+## Send Image
+
+```python
+response = connector.send_image(
+    PHONE,
+    "https://i.imgur.com/Fh7XVYY.jpeg"
+)
+```
+
+
 
 
 
