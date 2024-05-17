@@ -1,2 +1,2 @@
-from .wasap.wc_client import WhatsappConnector
-from .wasap.wc_reply_button import ReplyButton
+from .wasap.connector import WhatsappConnector
+from .wasap.components import ReplyButton, Image

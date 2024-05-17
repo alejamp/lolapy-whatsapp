@@ -5,6 +5,7 @@ from lolapy_whatsapp.wasap import WhatsappConnector
 from lolapy_whatsapp.wasap import ReplyButton
 
 
+
 logging.basicConfig(level=logging.INFO)
 
 load_dotenv("./examples/.env")
@@ -20,5 +21,6 @@ connector = WhatsappConnector(
 button1 = ReplyButton("id_yes", "Yes")
 button2 = ReplyButton("id_no", "No")
 
+
 connector.send_button_reply("Header Testing", "Body Testing", [button1, button2], PHONE, footer="Footer Testing")
-# connector.send_button_reply("Header Testing", "Body Testing", [button1, button2], PHONE)
+connector.send_button_reply("Header Testing", "Body Testing", [button1, button2], PHONE)

@@ -1,7 +1,7 @@
 from abc import ABC
 import logging
 from os import getenv
-from .wc_reply_button import ReplyButton
+from .components.reply_button import ReplyButton
 from whatsapp import WhatsApp, Message
 from dotenv import load_dotenv
 import json
