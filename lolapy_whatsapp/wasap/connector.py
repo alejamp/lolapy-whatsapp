@@ -54,24 +54,24 @@ class WhatsappConnector:
         if header_params:
             components.append({
                 "type": 'header',                
-                "parameters": [{"type": 'text', "text": param} for param in header_params]
+                "parameters": [str(param) for param in header_params]
             })
         if body_params:
             components.append({
                 "type": 'body',
-                "parameters": [{"type": 'text', "text": param} for param in body_params]
+                "parameters": [str(param) for param in body_params]
             })
         if button_params:
             components.append({
                 "type": 'button',
                 "sub_type": "url",
                 "index": "0",                
-                "parameters": [{"type": 'text', "text": param} for param in button_params]
+                "parameters": [str(param) for param in button_params]
             })
         if footer_params:
             components.append({
                 "type": 'footer',
-                "parameters": [{"type": 'text', "text": param} for param in footer_params]
+                "parameters": [str(param) for param in footer_params]
             })
         
         json_components = json.dumps(components)
