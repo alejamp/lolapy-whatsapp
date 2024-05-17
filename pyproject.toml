@@ -12,10 +12,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = [
-  # 'whatsapp-python'
-  "whatsapp-python @ git+https://github.com/alejamp/whatsapp",
-  "python-dotenv"
+dependencies = [  
+  'whatsapp-python @ git+https://github.com/alejamp/whatsapp',
+  'python-dotenv'
 ]
 
 [build-system]
