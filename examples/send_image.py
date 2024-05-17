@@ -1,7 +1,7 @@
 import logging
 from os import getenv
 from dotenv import load_dotenv
-from lolapy.wasap import WhatsappConnector
+from lolapy_whatsapp.wasap import WhatsappConnector
 
 
 logging.basicConfig(level=logging.INFO)

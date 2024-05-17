@@ -1,6 +1,6 @@
 [project]
-name = "lolapy"
-version = "0.0.3"
+name = "lolap_whatsapp"
+version = "0.0.4"
 authors = [
   { name="Alejandro Pirola", email="alejamp@gmail.com" },
 ]

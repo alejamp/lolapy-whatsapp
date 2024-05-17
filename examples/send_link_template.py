@@ -1,8 +1,8 @@
 import logging
 from os import getenv
 from dotenv import load_dotenv
-from lolapy.wasap import WhatsappConnector
-from lolapy.wasap import ReplyButton
+from lolapy_whatsapp.wasap import WhatsappConnector
+from lolapy_whatsapp.wasap import ReplyButton
 
 
 logging.basicConfig(level=logging.INFO)
