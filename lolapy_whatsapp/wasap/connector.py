@@ -87,6 +87,37 @@ class WhatsappConnector:
         return self.messenger
 
 
+    def send_link(self, image_url: str, link_label: str, body: str | None, link: str, phone: str, footer: str | None = None) -> None:
+        response = self.messenger.send_cta_url(
+            recipient_id=phone,
+            cta_url={
+                "type": "cta_url",
+                "header": {
+                    "type": "image",
+                    "image": {
+                        "link": image_url
+                    }
+                },
+                "body": {
+                    "text": body
+                },
+                "footer": {
+                    "text": footer
+                },
+                "action": {
+                    "name": "cta_url",
+                    "parameters": {
+                        "display_text": link_label,
+                        "url": link
+                    }
+                }                
+            }
+        )
+        
+        return response
+
+
+
 if __name__ == "__main__":
     
         # set logging level to info

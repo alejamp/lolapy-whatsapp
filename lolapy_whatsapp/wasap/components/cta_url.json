@@ -1,0 +1,29 @@
+{
+    "messaging_product": "whatsapp",
+    "recipient_type": "individual",
+    "to": "+573213113962",
+    "type": "interactive",
+    "interactive": {
+        "type": "cta_url",
+        "header": {
+            "type": "image",
+            "image": {
+                "link": "https://firebasestorage.googleapis.com/v0/b/numichat.appspot.com/o/Raas%2FTemplate_images%2F2_ENG.jpg?alt=media&token=7a323913-8c57-4977-9147-3fb9b2a66d6a"
+            }
+        },
+        "body": {
+            
+            "text": "Tap the button below to see available dates."
+        },
+        "footer": {
+            "text": "Dates subject to change."
+        },
+        "action": {
+            "name": "cta_url",
+            "parameters": {
+                "display_text": "See Dates",
+                "url": "https://www.luckyshrub.com?clickID=kqDGWd24Q5TRwoEQTICY7W1JKoXvaZOXWAS7h1P76s0R7Paec4"
+            }
+        }
+    }
+}
